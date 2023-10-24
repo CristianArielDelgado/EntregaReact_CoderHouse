@@ -1,0 +1,8 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}.container h2{
+    font-weight: none;
+    font-size: 30px;
+}
