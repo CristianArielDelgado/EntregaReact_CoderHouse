@@ -20,33 +20,30 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    }.header__container{
+    }.h_container{
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }.header_titulo{
+    }.titulo{
         color:var(--titulo);
         font-size: 45px;
         font-weight: 600;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     } 
-    /*.header__container-logo img{
-        max-width: 20%;
-        border-radius: 50%;
-    }*/.header__containerNav ul li{  
+    .containerNav ul li{  
         display: inline;    
         margin-right: 25px;
-    }.header__containerNav ul li a{
+    }.containerNav ul li a{
         color: var(--blanco);
         font-size: 25px;
         font-weight: bold;
-    }.header__containerNav ul li a:hover{
+    }.containerNav ul li a:hover{
         color: var(--amarillo);
 }
-.header__containerCart {
+.containerCart {
     display: flex;
     align-items: center;
     justify-content: center;

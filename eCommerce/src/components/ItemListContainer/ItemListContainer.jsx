@@ -1,4 +1,4 @@
-import styles from '../modules/itemListContainer.module.css';
+import styles from './itemListContainer.module.css';
 
 export const ItemListContainer = (props) => {
   return (

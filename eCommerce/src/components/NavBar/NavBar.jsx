@@ -1,14 +1,14 @@
 import { CartWidget } from '../CartWidget/CartWidget';
-import styles from '../modules/navBar.module.css';
+import styles from './navBar.module.css';
 
 
 export const NavBar = () => {
   return (
     <>
         <header className={styles.header}>
-            <div className={styles.header__container}>
-                    <h1 className={styles.header_titulo}>Hermides Beer</h1>
-                    <nav className={styles.header__containerNav}>
+            <div className={styles.h_container}>
+                    <h1 className={styles.titulo}>Hermides Beer</h1>
+                    <nav className={styles.containerNav}>
                         <ul>
                             <li><a href="#">Cervezas</a></li>
                             <li><a href="#">Vinos</a></li>
@@ -16,7 +16,7 @@ export const NavBar = () => {
                         </ul>
                     </nav>
 
-                    <div className={styles.header__containerCart}>
+                    <div className={styles.containerCart}>
                         <CartWidget />
                         <p className={styles.cartItemCount}>0</p>
                     </div>
