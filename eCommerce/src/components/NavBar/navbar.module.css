@@ -56,11 +56,11 @@
         padding: 1rem;
         border-radius: 1rem;
         text-align: center;
-    }.containerNav ul li a{
+    }.link{
         color: var(--blanco);
         font-size: 25px;
         font-weight: bold;
-    }.containerNav ul li a:hover{
+    }.link:hover{
         color: var(--amarillo);
 }
 .containerCart {

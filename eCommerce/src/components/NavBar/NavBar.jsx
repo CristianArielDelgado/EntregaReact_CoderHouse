@@ -21,10 +21,10 @@ export const NavBar = () => {
 
                 <nav className={styles.containerNav}>
                     <ul>
-                        <Link to={"/"}><li><a>Home</a></li></Link>
-                        <Link to={"/category/cervezas"}><li><a>Cervezas</a></li></Link>
-                        <Link to={"/category/vinos"}><li><a>Vinos</a></li></Link>
-                        <Link to={"/category/champagnes"}><li><a>Champagnes</a></li></Link>
+                        <Link to={"/"} className={styles.link}><li>Home</li></Link>
+                        <Link to={"/category/cervezas"} className={styles.link}><li>Cervezas</li></Link>
+                        <Link to={"/category/vinos"} className={styles.link}><li>Vinos</li></Link>
+                        <Link to={"/category/champagnes"} className={styles.link}><li>Champagnes</li></Link>
                     </ul>
                 </nav>
             </div>
