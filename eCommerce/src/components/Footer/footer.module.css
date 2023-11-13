@@ -1,0 +1,10 @@
+.footer{
+    width: 100%;
+    background-color: var(--barraNavegacion);
+    text-align: center;
+    position: relative;
+    }.footer small {
+        text-align: center;
+        font-size: 1rem;
+        color: var(--blanco);
+}
