@@ -1,7 +1,8 @@
 :root{
     --barraNavegacion: #9A4444;
-    --blanco: white;
+    --blanco: rgb(255, 255, 255);
     --amarillo: rgb(236, 236, 50);
+    --grey: rgb(219, 219, 219);
     --titulo: #e6902e;
 }
 * {
@@ -17,25 +18,46 @@
 
 .header{
     background-color: var(--barraNavegacion);
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1;
+    bottom: 0;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     }.h_container{
-        max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-    }.titulo{
+        padding: 2rem;
+        margin-top: 3rem;
+
+    }.tituloContainer{
+        display: flex;
+        align-items: center;
+    }.logo{
+        max-width: 6.5rem;
+        border: 0.1rem solid var(--grey);
+        border-radius: 50%;
+    }
+    .titulo{
+        margin-left: 1rem;
         color:var(--titulo);
-        font-size: 45px;
+        font-size: 1.5rem;
         font-weight: 600;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-    } 
-    .containerNav ul li{  
-        display: inline;    
-        margin-right: 25px;
+    }.containerNav ul li{  
+        display: block;    
+        margin-right: 10px;
+        border: 2px solid var(--blanco);
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-align: center;
     }.containerNav ul li a{
         color: var(--blanco);
         font-size: 25px;
@@ -44,6 +66,8 @@
         color: var(--amarillo);
 }
 .containerCart {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
