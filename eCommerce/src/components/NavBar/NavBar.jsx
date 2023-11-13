@@ -1,14 +1,16 @@
 import { CartWidget } from '../CartWidget/CartWidget';
 import styles from './navBar.module.css';
-
+import { Link } from "react-router-dom" 
 
 export const NavBar = () => {
   return (
     <>
         <header className={styles.header}>
             <div className={styles.h_container}>
-                <div className={styles.tituloContainer}>
-                    <img className={styles.logo} src="../../public/logoJPG.jpeg" alt="" />
+                <div className={styles.containerCart}>
+                    <Link to={"/"}>
+                        <img className={styles.logo} src="../../public/logoJPG.jpeg" alt="" />
+                    </Link>
                     <h1 className={styles.titulo}>Beer & Co</h1>
                 </div>
 
@@ -19,10 +21,10 @@ export const NavBar = () => {
 
                 <nav className={styles.containerNav}>
                     <ul>
-                    <li><a href="#">Home</a></li>
-                        <li><a href="#">Cervezas</a></li>
-                        <li><a href="#">Vinos</a></li>
-                         <li><a href="#">Champagnes</a></li>
+                        <Link to={"/"}><li><a>Home</a></li></Link>
+                        <Link to={"/category/cervezas"}><li><a>Cervezas</a></li></Link>
+                        <Link to={"/category/vinos"}><li><a>Vinos</a></li></Link>
+                        <Link to={"/category/champagnes"}><li><a>Champagnes</a></li></Link>
                     </ul>
                 </nav>
             </div>
