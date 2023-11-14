@@ -1,18 +1,18 @@
-
-import { Footer, NavBar } from "./components";
-import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { NavBar, Footer } from "./components";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 
 export const App = () => {
   return (
     <>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer message={"Bienvenidos al catálogo de bebidas alcoholicas mas grande de zona sur."} />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer message={"Bienvenidos al catálogo de bebidas alcohólicas más grande de zona sur."}/>}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
+

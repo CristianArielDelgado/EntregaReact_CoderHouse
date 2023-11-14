@@ -1,9 +1,20 @@
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 0.7rem;
-    margin-left: 25rem;
-}.container h2{
-    font-weight: none;
-    font-size: 2rem;
-}
+.container {
+    margin-left: 22rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .productCard {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    /* Additional styles for your product cards */
+  }
+  
